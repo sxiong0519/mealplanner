@@ -15,7 +15,7 @@ const groceryItems = [
         id: 3,
         item: "rice",
         price: 30,
-        area: "pantry closet"
+        area: "pantry"
     },
     {
         id: 4,
@@ -28,6 +28,19 @@ const groceryItems = [
         item: "chicken",
         price: 7,
         area: "fridge"
+    },
+    {
+        id: 6,
+        item: "water",
+        price: 3.99,
+        area: "pantry"
+    },
+    {
+        id: 7,
+        item: "broccoli",
+        price: 4.99,
+        area: "fridge"
     }
-    
 ]
+
+console.log(groceryItems)
