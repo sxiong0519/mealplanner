@@ -43,4 +43,56 @@ const groceryItems = [
     }
 ]
 
+const dateCreated = new Date();
+
+var date = dateCreated.getFullYear()+'-'+(dateCreated.getMonth()+1)+'-'+dateCreated.getDate();
+
+const addToShoppingList = (groceryItemsPlus) => {
+    const lastIndex = groceryItems.length - 1
+    const lastItemId = groceryItems[lastIndex].id
+    const newId = lastItemId + 1
+    
+    groceryItemsPlus.id = newId
+    groceryItems.push(groceryItemsPlus)
+}
+
+const iceCream =
+    {
+        name: "ice cream",
+        price: 4.99,
+        area: "freezer",
+        "date created": dateCreated
+    }
+
+const chips = {
+    name: "chips",
+    price: 5.99,
+    area: "shelf"
+}
+
+const squid = {
+    name: "squid",
+    price: 11,
+    area: "freezer"
+}
+
+const soda = {
+    name: "dr. pepper",
+    price: 8.99,
+    area: "fridge"
+}
+
+const creamer = {
+    name: "heavy cream",
+    price: 5.99,
+    area: "fridge"
+}
+
+addToShoppingList(iceCream)
+addToShoppingList(chips)
+addToShoppingList(squid)
+addToShoppingList(soda)
+addToShoppingList(creamer)
+
+
 console.log(groceryItems)
